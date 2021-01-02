@@ -412,10 +412,15 @@ ul.navigation {
 ul.navigation li {
   display: inline-block;
   margin-right: 1em;
+  padding-bottom: 0.2em;
+}
+
+ul.navigation li.active {
+  border-bottom: 2px solid rgba(7, 13, 89, 0.2);
 }
 
 ul.navigation li:hover {
-  text-decoration: underline;
+  border-bottom: 2px solid rgba(7, 13, 89, 0.8);
   cursor: pointer;
 }
 
@@ -528,7 +533,7 @@ footer {
 
 @media only screen and (max-width: 850px) {
   html {
-    font-size:0.8em;
+    font-size:0.9em;
   }  
 
   h1 {
