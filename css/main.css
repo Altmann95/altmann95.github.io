@@ -313,6 +313,7 @@ h2 {
 
 h3 {
   color: rgba(245, 47, 24, 100);
+  margin-bottom: 0.5em;
 }
 
 div.work h3, div.publications h3 {
@@ -325,6 +326,8 @@ h3.subtitle {
   font-weight: 500 !important;
   font-size: 0.9em !important;
   color:#222831;
+  margin-top:0em;
+  margin-bottom: 1.5em;
 }
 
 span.out_link a {
@@ -352,19 +355,29 @@ a:hover {
   text-decoration: wavy;
 }
 
-div.work img, div.publications img {
+div.work img, div.publications img, div.logo_container img {
   filter: gray; /* IE6-9 */
   -webkit-filter: grayscale(100%); /* Chrome 19+ & Safari 6+ */
   transition: all 0.2s;
 }
 
-div.work img:hover, div.publications img:hover {
+div.work img:hover, div.publications img:hover, div.logo_container img:hover {
   filter: none; /* IE6-9 */
   -webkit-filter: grayscale(0%); /* Chrome 19+ & Safari 6+ */
 }
 
 img {
   max-width: 100%;
+}
+
+div.logo_container {
+  display: inline-block;
+  max-width: 100%;
+}
+
+div.logo_container img {
+  max-height: 1.1em;
+  margin-right:1em;
 }
 
 .caption {
