@@ -536,7 +536,7 @@ div.secondary_navigation {
 }
 
 .work__item a {
-  text-decoration: none;
+  text-decoration: none !important;
 }
 
 footer {
