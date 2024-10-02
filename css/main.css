@@ -261,7 +261,7 @@ textarea {
     widows: 3;
   }
 
-  p, 
+  p,
   span {
     color: #1b1c25;
     font-size:0.8em;
@@ -282,7 +282,7 @@ div {
   box-sizing: border-box;
 }
 
-p, 
+p,
 span {
   color: #1b1c25;
 }
@@ -357,17 +357,6 @@ a {
 a:hover {
   color: #070d59;
   text-decoration: wavy;
-}
-
-div.work img, div.publications img, div.logo_container img {
-  filter: gray; /* IE6-9 */
-  -webkit-filter: grayscale(100%); /* Chrome 19+ & Safari 6+ */
-  transition: all 0.2s;
-}
-
-div.work img:hover, div.publications img:hover, div.logo_container img:hover, div.work__item:hover img {
-  filter: none; /* IE6-9 */
-  -webkit-filter: grayscale(0%); /* Chrome 19+ & Safari 6+ */
 }
 
 img, video {
@@ -663,7 +652,7 @@ footer {
 @media only screen and (max-width: 850px) {
   html {
     font-size:0.9em;
-  }  
+  }
 
   h1 {
     margin-top: 0em;
@@ -710,11 +699,26 @@ footer {
 
 }
 
+@media not all and (hover: none) {
+
+  div.work img, div.publications img, div.logo_container img {
+    filter: gray; /* IE6-9 */
+    -webkit-filter: grayscale(100%); /* Chrome 19+ & Safari 6+ */
+    transition: all 0.2s;
+  }
+
+  div.work img:hover, div.publications img:hover, div.logo_container img:hover, div.work__item:hover img {
+    filter: none; /* IE6-9 */
+    -webkit-filter: grayscale(0%); /* Chrome 19+ & Safari 6+ */
+  }
+
+}
+
 .svg {
   fill: currentColor;
   line-height: 1;
   height: 1em;
-  width: 1em; 
+  width: 1em;
 }
 
 .svg.inline-icon {
