@@ -512,11 +512,16 @@ div.secondary_navigation {
 
 .grid2__image {
   grid-area: image;
+  display: grid;
+  justify-items: right;
 }
 
+
 .grid2__image img {
-  aspect-ratio: 4/3;
+  max-height: 70vh;
+  width:100%;
   object-fit: cover;
+  object-position: top;
 }
 
 .publications div.grid3 {
@@ -582,14 +587,14 @@ footer {
   margin-right:0.5em;
   margin-left: 0.5em;
   margin-bottom:0.175em;
-  margin-top:0;
+  margin-top:0.2em;
   width:1.15rem;
   height:1.15rem;
 }
 
 .button span:not(:first-child) {
   margin-right:0.4em;
-  margin-top:0.1em;
+  margin-top:0;
 }
 
 .button:hover {
@@ -614,8 +619,11 @@ footer {
 
 
 .grid2__project-header .button {
-  float:right;
+  display: inline-flex;
   margin:1em;
+  margin-left:auto;
+  justify-items: center;
+  vertical-align: middle;
 }
 
 @media only screen and (max-width: 600px) {
@@ -674,6 +682,10 @@ footer {
     grid-column: span 1;
   }
 
+  .grid2__project-header img {
+    max-height:none;
+  }
+
 }
 
 @media only screen and (max-width: 850px) {
@@ -722,6 +734,14 @@ footer {
 
   .container {
     grid-template-columns: 20% minmax(auto, 60em) auto;
+  }
+
+  .grid2__project-header {
+    display: block;
+  }
+
+  .grid2__project-header img {
+    max-height:none;
   }
 
 }
