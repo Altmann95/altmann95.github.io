@@ -361,6 +361,7 @@ a:hover {
 
 img, video {
   max-width: 100%;
+  max-height: 100%;
 }
 
 .img--60vh {
@@ -814,9 +815,15 @@ footer {
 
 .svg {
   fill: currentColor;
-  line-height: 1;
-  height: 1em;
-  width: 1em;
+  line-height: 1.15;
+  height: 1.15em;
+  width: 1.15em;
+}
+
+.svg.svg--large {
+  line-height: 2em;
+  height:2em;
+  width:2em;
 }
 
 .svg.inline-icon {
